@@ -26,7 +26,7 @@ public class TestJpa {
             LivreEntity livreUpdate = entityManager.find(LivreEntity.class, 5);
             livreUpdate.setTitre("Du plaisir dans la cuisine");
 
-            LivreEntity livreDelete = entityManager.find(LivreEntity.class, 15);
+            LivreEntity livreDelete = entityManager.find(LivreEntity.class, 16);
             if (livreDelete != null) entityManager.remove(livreDelete);
 
             String jpql = "from LivreEntity where titre = 'Vingt mille lieues sous les mers'";
